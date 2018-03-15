@@ -1,3 +1,79 @@
 page-home {
+  ion-grid.grid {
+    background-color: color($colors, light);
+    padding: 0;
+  }
 
+  ion-row {
+    .col {
+      color: color($colors, text-color);
+      height: 130px;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 30px;
+    }
+  }
+
+  ion-row.mid-row ion-col {
+    flex: 1 1 300px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+    display: grid;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 16px;
+    display: grid;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 14px;
+    display: grid;
+    justify-content: center;
+  }
+
+  #box1 {
+    background-color: #ff5560;
+  }
+
+  #box2 {
+    background-color: #97c95f;
+  }
+
+  #box3 {
+    background-color: #9f90ff;
+  }
+
+  #box4 {
+    background-color: #605480;
+  }
+
+  #box5 {
+    background-color: #ffd23e;
+  }
+
+  #box6 {
+    background-color: #802e62;
+  }
+
+  #box7 {
+    background-color: #79ffb4;
+  }
+
+  #box8 {
+    background-color: #ffff81;
+  }
+
+  @for $i from 1 through 12 {
+    $bg-color: darken(gray, ($i + $i));
+    [col-#{$i}] {
+      background-color: $bg-color;
+    }
+  }
 }
+
+
