@@ -1,5 +1,4 @@
 page-home {
-
   ion-grid.grid {
     background-color: $text-color;
     padding: 0;
@@ -18,21 +17,36 @@ page-home {
   }
 
   #box1 {
-    background-color: #ededed;
+    background-color: #000000;
     height: 400px;
+    border: 1px solid #ededed;
+    border-right:none;
+    background-image: url("../../assets/imgs/change.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
 
-  #subbox1 {
-    background-color: #bbbbbb;
+  #subbox1, #subbox2 {
+    background-color: #000000;
     height: 200px;
+    border: 1px solid #ededed;
+    background-image: url("../../assets/imgs/idealisme.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
 
   #subbox2 {
-    background-color: #6d00ff;
-    height: 200px;
+    border-top: none;
+    background-image: url("../../assets/imgs/science.jpg");
   }
 
-  h1, h2 {
+  h1 {
+    font-size: 35px;
+    display: grid;
+    justify-content: center;
+  }
+
+  h2 {
     font-size: 18px;
     display: grid;
     justify-content: center;

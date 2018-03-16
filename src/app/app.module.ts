@@ -9,10 +9,13 @@ import { HomePage } from '../pages/home/home';
 import { SubPage } from "../pages/sub/sub";
 import {HomePageModule} from "../pages/home/home.module";
 import {SubPageModule} from "../pages/sub/sub.module";
+import {CategoriesPage} from "../pages/categories/categories";
+import {CategoriesPageModule} from "../pages/categories/categories.module";
 const myLink : DeepLinkConfig = {
   links: [
     {component: HomePage, name: 'home' },
     {component: SubPage, name: 'sub' },
+    {component: CategoriesPage, name: 'categories' },
   ]
 }
 @NgModule({
@@ -23,6 +26,7 @@ const myLink : DeepLinkConfig = {
     BrowserModule,
     HomePageModule,
     SubPageModule,
+    CategoriesPageModule,
     IonicModule.forRoot(MyApp, {}, myLink)
   ],
   bootstrap: [IonicApp],
